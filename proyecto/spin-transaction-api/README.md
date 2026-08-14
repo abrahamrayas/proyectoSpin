@@ -6,15 +6,16 @@ REST API for financial transaction execution. Validates business rules, calls an
 
 ## Stack
 
-| Layer | Choice                                         |
-|-------|------------------------------------------------|
-| Runtime | Java 17+, Spring Boot 4.0.6                    |
-| Persistence | PostgreSQL + JPA (Hibernate `ddl-auto=update`) |
-| HTTP client | `RestClient` with trace propagation            |
-| Logs | Logstash → **Elasticsearch** → **Kibana**      |
-| Metrics | Prometheus (`/actuator/prometheus`)            |
-| Traces | Jaeger OTLP (profile `observability`)          |
+| Layer         | Choice                                         |
+|---------------|------------------------------------------------|
+| Runtime       | Java 17+, Spring Boot 4.0.6                    |
+| Persistence   | PostgreSQL + JPA (Hibernate `ddl-auto=update`) |
+| HTTP client   | `RestClient` with trace propagation            |
+| Logs          | Logstash → **Elasticsearch** → **Kibana**      |
+| Metrics       | Prometheus (`/actuator/prometheus`)            |
+| Traces        | Jaeger OTLP (profile `observability`)          |
 | Provider mock | `provider-mock` module (port 8084)             |
+| Docker        | Docker desktop (https://docs.docker.com/desktop/setup/install/windows-install/)                              |
 
 ### Why PostgreSQL?
 
