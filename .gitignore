@@ -1,0 +1,3 @@
+# Project exclude paths
+/proyectyo/spin-provider-mock/target/
+/proyectyo/spin-transaction-api/target/
