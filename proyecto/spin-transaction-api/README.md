@@ -4,6 +4,14 @@ REST API for financial transaction execution. Validates business rules, calls an
 
 **Group:** `com.arayas`
 
+## Requirements
+
+JDK17+ (https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
+
+Docker Desktop (https://docs.docker.com/desktop/setup/install/windows-install/)
+
+Apache Maven 3.9.11 (Including in IntelliJ)
+
 ## Stack
 
 | Layer         | Choice                                         |
@@ -15,7 +23,6 @@ REST API for financial transaction execution. Validates business rules, calls an
 | Metrics       | Prometheus (`/actuator/prometheus`)            |
 | Traces        | Jaeger OTLP (profile `observability`)          |
 | Provider mock | `provider-mock` module (port 8084)             |
-| Docker        | Docker desktop (https://docs.docker.com/desktop/setup/install/windows-install/)                              |
 
 ### Why PostgreSQL?
 
